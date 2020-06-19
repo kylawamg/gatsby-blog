@@ -1,0 +1,73 @@
+@import "vars";
+html,
+body {
+  background: #fafafa;
+  font-family: $main-font-family;
+  min-height: 100vh;
+}
+.home-container {
+  text-align: center;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.home-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 70px;
+    height: 2px;
+    background: $main-blue;
+    transform: translateX(-50%);
+  }
+}
+.btn-load-more {
+  margin-top: 50px;
+  background: transparent;
+  border-radius: 3px;
+  color: $main-blue;
+  border: 1px solid $main-blue;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background-color: $main-blue;
+    color: #fff;
+  }
+}
+.post-detail-content {
+  background: #fff;
+  text-align: left;
+}
+.article__content {
+  padding: 2em;
+  border: 1px solid #eaeaea;
+  @media (min-width: $break-point-tablet) {
+    padding: 60px 70px;
+  }
+}
+.divider-dot {
+  color: #000;
+  font-weight: 700;
+  &:after {
+    content: "\b7";
+    margin: 0 0.3em;
+  }
+}
+.article__body {
+  padding-top: 10px;
+}
+.article__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 300px;
+  @media (min-width: $break-point-tablet) {
+    height: 490px;
+  }
+}
