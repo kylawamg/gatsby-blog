@@ -9,11 +9,7 @@ const Card = ({ post }) => {
       <div className="uk-card uk-card-default">
         <div className="uk-card-media-top">
           <Link to="''">
-            <img
-              className="img-card"
-              src={post.node.image.publicURL}
-              alt={post.node.image.publicURL}
-            ></img>
+            <img className="img-card"></img>
           </Link>
         </div>
 

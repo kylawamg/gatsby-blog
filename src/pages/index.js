@@ -16,12 +16,6 @@ const IndexPage = () => (
               node {
                 title
                 content
-                category {
-                  name
-                }
-                image {
-                  publicURL
-                }
               }
             }
           }
