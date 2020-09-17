@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://64.225.72.200",
+        apiURL: process.env.API_URL || "https://api.devspain.es",
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           "post",
@@ -31,6 +31,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
