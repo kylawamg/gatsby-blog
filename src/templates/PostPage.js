@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const PostTemplate = ({ data }) => (
   <Layout>
-    <h1>Holaaaaa</h1>
+    <h1>Holaaaaaaasasdasdasd</h1>
     <h1>{data.strapiPost.title}</h1>
     <p>{data.strapiPost.content}</p>
   </Layout>
