@@ -1,3 +1,13 @@
+const textPrimaryPurple = "#42316C"
+const textPrimaryGray = "#FCF3EF"
+const textSecondaryPurple = "#554087"
+const textSecondaryGray = "#FCF3EF"
+const textPrimaryCyan = "#2AA9A9"
+const backgroundCyan = "#2AA9A9"
+const backgroundWhite = "#F2F2F2"
+// const backgroundWhiteTwo = "#F9F9F9"
+const backgroundGray = "#F0F0F0"
+
 module.exports = {
   important: true,
   theme: {
@@ -6,24 +16,38 @@ module.exports = {
       body: ["Staatliches", "sans-serif"],
     },
     colors: {
-      primary: "#000000",
-      secondary: "#ff00ff"
-    },
-    extend: {
-      colors: {
-        indigo: {
-          lighter: "#b3bcf5",
-          default: "#5c6ac4",
-          dark: "#202e78",
-        },
+      title_purple: {
+        primary: textPrimaryPurple,
+        secondary: textSecondaryPurple,
       },
-      margin: {
-        "96": "24rem",
-        "128": "32rem",
+      title_gray: {
+        primary: textPrimaryGray,
+        secondary: textSecondaryGray,
       },
+      subtitle_purple: {
+        primary: textPrimaryPurple,
+        secondary: textSecondaryPurple,
+      },
+      subtitle_gray: {
+        primary: textPrimaryGray,
+        secondary: textSecondaryGray,
+      },
+      text_cyan: {
+        primary: textPrimaryCyan
+      },
+      text_purple: {
+        primary: textPrimaryPurple,
+        secondary: textSecondaryPurple,
+      },
+      text_gray: {
+        primary: textPrimaryGray,
+        secondary: textSecondaryGray,
+      },
+      background_gray: backgroundGray,
+      background_white: backgroundWhite,
+      background_cyan: backgroundCyan
     },
+    extend: {},
   },
-  variants: {
-    opacity: ["responsive", "hover"],
-  },
+  variants: {},
 }
