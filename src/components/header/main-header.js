@@ -7,46 +7,15 @@ const MainHeader = () => {
   let isMobileMenuOpen = false
   const [isExpanded, toggleExpansion] = useState(false)
 
-  /*return (
-    <div class="container mx-auto">
-      <nav class="flex-row md:justify-between">
-        <div class="flex flex-row justify-between h-16 lg:h-24 lg:px-20">
-          <a href="#" className="self-center text-xl">
-            &lt;<span className="text-teal-500 text-xl">/</span>devSpain&gt;
-          </a>
-
-          <AiOutlineMenu
-            onClick={() => toggleMobileMenu()}
-            className="md:hidden self-center"
-          ></AiOutlineMenu>
-        </div>
-
-        <ul class="hidden md:flex md:flex-row" id="mobileMenu">
-          <li class="pr-5">
-            <a> Services </a>
-          </li>
-          <li class="pr-5">
-            <a>Porfolio</a>
-          </li>
-          <li class="pr-5">
-            <a>About</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  ) */
   return (
-    <div class="container mx-auto">
+    <div className="container mx-auto">
       <nav className="flex items-center justify-between flex-wrap p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <a
             href="#"
-            className="font-semibold text-xl tracking-tight self-center"
+            className="text-primary font-semibold text-xl tracking-tight self-center"
           >
-            &lt;<span className="text-teal-500 font-bold text-xl">/</span>
+            &lt;<span className="text-primary font-bold text-xl">/</span>
             devSpain&gt;
           </a>
         </div>
