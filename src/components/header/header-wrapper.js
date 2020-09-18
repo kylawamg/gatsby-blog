@@ -5,7 +5,7 @@ import "./header-wrapper.scss"
 
 const HeaderWrapper = () => {
   return (
-    <div>
+    <div className="absolute top-0 left-0 w-full mx-auto lg:px-20 px-4">
       <MainHeader></MainHeader>
       <SubHeader></SubHeader>
     </div>
