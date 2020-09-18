@@ -13,7 +13,7 @@ const MainHeader = () => {
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <a
             href="#"
-            className="text-primary font-semibold text-xl tracking-tight self-center"
+            className="text-secondary font-semibold text-xl tracking-tight self-center"
           >
             &lt;<span className="text-primary font-bold text-xl">/</span>
             devSpain&gt;

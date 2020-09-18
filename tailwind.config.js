@@ -5,6 +5,10 @@ module.exports = {
       display: ["Staatliches", "sans-serif"],
       body: ["Staatliches", "sans-serif"],
     },
+    colors: {
+      primary: "#000000",
+      secondary: "#ff00ff"
+    },
     extend: {
       colors: {
         indigo: {
