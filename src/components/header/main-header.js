@@ -1,8 +1,10 @@
 import React, { useState } from "react"
 import { AiOutlineMenu } from "react-icons/ai"
-import "./main-header.scss"
+import Logo from "../logo"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+
+import "./main-header.scss"
+
 const MainHeader = () => {
   let isMobileMenuOpen = false
   const [isExpanded, toggleExpansion] = useState(false)
@@ -10,15 +12,7 @@ const MainHeader = () => {
   return (
     <div className="container mx-auto">
       <nav className="flex items-center justify-between flex-wrap p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <a
-            href="#"
-            className="text-secondary font-semibold text-xl tracking-tight self-center"
-          >
-            &lt;<span className="text-primary font-bold text-xl">/</span>
-            devSpain&gt;
-          </a>
-        </div>
+        <Logo/>
         <div className="block lg:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}
