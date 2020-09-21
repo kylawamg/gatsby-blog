@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 .hover\:underline:hover,
 .active\:underline:active {
   text-decoration-color: #2aa9a9 !important;

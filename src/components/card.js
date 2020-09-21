@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../assets/scss/card.scss"
-
 const Card = ({ post }) => {
   return (
     <article className="mt-10 lg:mt-4 w-full h-card rounded-lg border border-title_purple-secondary bg-background_card shadow-card">
