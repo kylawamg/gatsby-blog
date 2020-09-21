@@ -10,3 +10,14 @@
 .custom-bg {
   background: url("../assets/images/intro.png");
 }
+.custom-bg-card {
+  background: url("../assets/images/header-bg.png");
+}
+.bg-shape {
+  background: url("../assets/images/shape.png");
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}

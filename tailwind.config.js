@@ -5,7 +5,7 @@ const textSecondaryGray = "#FCF3EF"
 const textPrimaryCyan = "#2AA9A9"
 const backgroundCyan = "#2AA9A9"
 const backgroundWhite = "#F2F2F2"
-// const backgroundWhiteTwo = "#F9F9F9"
+const backgroundWhiteTwo = "#F9F9F9"
 const backgroundGray = "#F0F0F0"
 const lineGray = "#E7E7E7"
 
@@ -49,6 +49,7 @@ module.exports = {
       background_white: backgroundWhite,
       background_cyan: backgroundCyan,
       line_gray: lineGray,
+      background_card: backgroundWhiteTwo,
     },
     extend: {
       fontSize: {
@@ -56,7 +57,13 @@ module.exports = {
         post_title: "4.5rem",
       },
       height: {
-        card: "23.1rem",
+        card: "22.1rem",
+      },
+      width: {
+        card: "18rem",
+      },
+      boxShadow: {
+        card: "8px 8px 0px rgba(55,210,210, 0.5)",
       },
     },
   },
