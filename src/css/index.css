@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover\:underline:hover,
+.active\:underline:active {
+  text-decoration-color: #2aa9a9 !important;
+  text-decoration: underline;
+}
+.custom-bg {
+  background: url("../assets/images/intro.png");
+}
