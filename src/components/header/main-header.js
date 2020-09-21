@@ -5,8 +5,6 @@ import { HiMenuAlt4 } from "react-icons/hi"
 import Logo from "../logo"
 import { Link } from "gatsby"
 
-import "./main-header.scss"
-
 const MainHeader = () => {
   let isMobileMenuOpen = false
   const [isExpanded, toggleExpansion] = useState(false)
@@ -20,7 +18,7 @@ const MainHeader = () => {
             onClick={() => toggleExpansion(!isExpanded)}
             style={{ fill: "white" }}
             size={26}
-            className="text-white  self-center"
+            className="text-white self-center"
           ></HiMenuAlt4>
         </div>
         <div
@@ -30,7 +28,7 @@ const MainHeader = () => {
         >
           <div className="text-title_gray-primary font-semibold">
             <Link
-              to={`/page-2`}
+              to={`/blog`}
               href="#responsive-header"
               className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
             >
