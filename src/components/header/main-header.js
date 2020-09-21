@@ -10,50 +10,47 @@ const MainHeader = () => {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <div className="container mx-auto font-secondary">
-      <nav className="flex items-center justify-between flex-wrap p-6">
+    <div className="container mx-auto font-secondary bg-title_purple-primary">
+      <nav className="border-b border-line_gray flex justify-between flex-wrap py-6 lg:px-12">
         <Logo />
         <div className="block lg:hidden">
-          <button
+          <AiOutlineMenu
             onClick={() => toggleExpansion(!isExpanded)}
-            className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-          >
-            <AiOutlineMenu className="md:hidden self-center"></AiOutlineMenu>
-          </button>
+            style={{ fill: "white" }}
+            className="text-white  md:hidden self-center"
+          ></AiOutlineMenu>
         </div>
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-          } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+          } w-full block flex-grow lg:flex lg:flex-row-reverse lg:items-center lg:self-end lg:w-auto`}
         >
-          <div className="text-sm lg:flex-grow">
+          <div className="text-title_gray-primary">
             <Link
               to={`/page-2`}
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-            >
-              Docs
-            </Link>
-            <Link
-              to={`/page-2`}
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-            >
-              Examples
-            </Link>
-            <Link
-              to={`/page-2`}
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
             >
               Blog
             </Link>
-          </div>
-          <div>
-            <a
-              href="#download"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+            <Link
+              to={`/page-2`}
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0  mr-4"
             >
-              Download
-            </a>
+              Cursos
+            </Link>
+            <Link
+              to={`/page-2`}
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
+            >
+              Quiénes somos
+            </Link>
+            <Link
+              to={`/page-2`}
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
+            >
+              Contacto
+            </Link>
           </div>
         </div>
       </nav>

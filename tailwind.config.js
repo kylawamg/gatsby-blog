@@ -7,7 +7,7 @@ const backgroundCyan = "#2AA9A9"
 const backgroundWhite = "#F2F2F2"
 // const backgroundWhiteTwo = "#F9F9F9"
 const backgroundGray = "#F0F0F0"
-
+const lineGray = "#E7E7E7"
 module.exports = {
   important: true,
   theme: {
@@ -46,6 +46,7 @@ module.exports = {
       background_gray: backgroundGray,
       background_white: backgroundWhite,
       background_cyan: backgroundCyan,
+      line_gray: lineGray,
     },
     extend: {},
   },

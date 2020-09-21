@@ -5,9 +5,9 @@ const Logo = () => {
     <div className="flex items-center flex-shrink-0 text-white mr-6">
       <a
         href="#"
-        className="text-title_purple-primary font-semibold text-xl tracking-tight self-center"
+        className="text-title_gray-primary font-semibold text-xl tracking-tight self-center"
       >
-        &lt;<span className="text-primary font-bold text-xl">/</span>
+        &lt;<span className="text-text_cyan-primary font-bold text-xl">/</span>
         devSpain&gt;
       </a>
     </div>
