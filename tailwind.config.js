@@ -58,9 +58,11 @@ module.exports = {
       },
       height: {
         card: "22.1rem",
+        tag: "21.25rem",
       },
       width: {
         card: "18rem",
+        tag: "34.125rem",
       },
       boxShadow: {
         card: "8px 8px 0px rgba(55,210,210, 0.5)",
