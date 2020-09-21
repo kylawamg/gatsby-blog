@@ -39,6 +39,10 @@ function SEO({ description, lang, meta, title }) {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css?family=Inconsolata",
         },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Montserrat",
+        },
       ]}
       script={[]}
       meta={[
