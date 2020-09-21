@@ -15,7 +15,7 @@ const Posts = ({ posts }) => {
               )
             } else {
               return (
-                <div key={i} class="w-1/3 bg-gray-400">
+                <div key={i} className="w-1/3 bg-gray-400">
                   <Card post={post} />
                 </div>
               )
