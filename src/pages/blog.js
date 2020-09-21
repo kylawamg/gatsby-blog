@@ -17,19 +17,13 @@ const Blog = () => {
                 node {
                   title
                   content
+                  id
                 }
               }
             }
           }
         `}
-        render={data => (
-          <div className="uk-section">
-            <div className="uk-container uk-container-large">
-              <h1>Strapi blog</h1>
-              <PostComponent posts={data.allStrapiPost.edges} />
-            </div>
-          </div>
-        )}
+        render={data => <PostComponent posts={data.allStrapiPost.edges} />}
       />
     </Layout>
   )

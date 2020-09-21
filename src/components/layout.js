@@ -8,7 +8,7 @@ const Layout = ({ children, subheader }) => {
     <>
       <Seo />
       <HeaderWrapper>{subheader}</HeaderWrapper>
-      <main>{children}</main>
+      <main className="relative">{children}</main>
     </>
   )
 }
