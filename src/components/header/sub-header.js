@@ -1,5 +1,4 @@
 import React from "react"
-import "./sub-header.scss"
 import imgTag from "../../assets/images/tag.png"
 const SubHeader = () => {
   return (

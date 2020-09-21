@@ -3,11 +3,12 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import PostComponent from "../components/posts"
+import SubHeader from "../components/header/sub-header"
 
 import "../assets/scss/main.scss"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout subheader={<SubHeader />}>
     <StaticQuery
       query={graphql`
         query {

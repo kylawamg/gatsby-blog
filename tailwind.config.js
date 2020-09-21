@@ -53,6 +53,10 @@ module.exports = {
     extend: {
       fontSize: {
         mainTitle: "3.75rem",
+        post_title: "4.5rem",
+      },
+      height: {
+        card: "23.1rem",
       },
     },
   },

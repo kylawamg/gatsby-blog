@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import Seo from "./seo"
 import HeaderWrapper from "./header/header-wrapper"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, subheader }) => {
   return (
     <>
       <Seo />
-      <HeaderWrapper />
-      <main>{children}</main>
+      <HeaderWrapper>{subheader}</HeaderWrapper>
+      <main className="relative">{children}</main>
     </>
   )
 }
