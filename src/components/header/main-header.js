@@ -10,9 +10,9 @@ const MainHeader = () => {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto font-secondary">
       <nav className="flex items-center justify-between flex-wrap p-6">
-        <Logo/>
+        <Logo />
         <div className="block lg:hidden">
           <button
             onClick={() => toggleExpansion(!isExpanded)}

@@ -12,8 +12,8 @@ module.exports = {
   important: true,
   theme: {
     fontFamily: {
-      display: ["Staatliches", "sans-serif"],
-      body: ["Staatliches", "sans-serif"],
+      primary: ["Montserrat"],
+      secondary: ["Inconsolata"],
     },
     colors: {
       title_purple: {
@@ -33,7 +33,7 @@ module.exports = {
         secondary: textSecondaryGray,
       },
       text_cyan: {
-        primary: textPrimaryCyan
+        primary: textPrimaryCyan,
       },
       text_purple: {
         primary: textPrimaryPurple,
@@ -45,7 +45,7 @@ module.exports = {
       },
       background_gray: backgroundGray,
       background_white: backgroundWhite,
-      background_cyan: backgroundCyan
+      background_cyan: backgroundCyan,
     },
     extend: {},
   },

@@ -37,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
       link={[
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Staatliches",
+          href: "https://fonts.googleapis.com/css?family=Inconsolata",
         },
       ]}
       script={[]}
