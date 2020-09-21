@@ -7,3 +7,6 @@
   text-decoration-color: #2aa9a9 !important;
   text-decoration: underline;
 }
+.custom-bg {
+  background: url("../assets/images/header-bg.png");
+}

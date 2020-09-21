@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Nav from "./nav"
 import Seo from "./seo"
 import HeaderWrapper from "./header/header-wrapper"
 
@@ -9,6 +8,7 @@ const Layout = ({ children }) => {
     <>
       <Seo />
       <HeaderWrapper />
+      <main>{children}</main>
     </>
   )
 }

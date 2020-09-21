@@ -8,6 +8,7 @@ const backgroundWhite = "#F2F2F2"
 // const backgroundWhiteTwo = "#F9F9F9"
 const backgroundGray = "#F0F0F0"
 const lineGray = "#E7E7E7"
+
 module.exports = {
   important: true,
   theme: {

@@ -7,7 +7,10 @@ const Logo = () => {
         href="#"
         className="text-title_gray-primary font-semibold text-xl tracking-tight self-center"
       >
-        &lt;<span className="text-text_cyan-primary font-bold text-xl">/</span>
+        &lt;
+        <span className="text-text_cyan-primary font-extrabold text-2xl">
+          /
+        </span>
         devSpain&gt;
       </a>
     </div>
