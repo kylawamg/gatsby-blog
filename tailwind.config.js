@@ -44,12 +44,17 @@ module.exports = {
         primary: textPrimaryGray,
         secondary: textSecondaryGray,
       },
+      white: "#ffffff",
       background_gray: backgroundGray,
       background_white: backgroundWhite,
       background_cyan: backgroundCyan,
       line_gray: lineGray,
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        mainTitle: "3.75rem",
+      },
+    },
   },
   variants: {},
 }

@@ -13,14 +13,14 @@ const MainHeader = () => {
 
   return (
     <div className="container mx-auto">
-      <nav className="border-b border-line_gray flex justify-between flex-wrap py-6 lg:px-12">
+      <nav className="border-b border-line_gray flex justify-between flex-wrap py-6 lg:px-32">
         <Logo />
         <div className="block lg:hidden">
           <HiMenuAlt4
             onClick={() => toggleExpansion(!isExpanded)}
             style={{ fill: "white" }}
             size={26}
-            className="text-white  md:hidden self-center"
+            className="text-white  self-center"
           ></HiMenuAlt4>
         </div>
         <div
@@ -50,7 +50,7 @@ const MainHeader = () => {
             </Link>
             <Link
               to={`/page-2`}
-              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0"
             >
               Contacto
             </Link>
