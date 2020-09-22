@@ -9,7 +9,7 @@ const SubHeader = () => {
             <h1 className="text-4xl font-primary text-title_gray-secondary leading-none lg:text-mainTitle">
               Curso de introducción a Gatsby
             </h1>
-            <p className="mt-4 text-title_gray-secondary">
+            <p className="mt-8 text-title_gray-secondary">
               simply dummy text of the printing and typesetting industry. Lorem
               Ipsum has been the industry's standard dummy text ever since the
               1500s, when an unknown printer took a galley of type and scrambled
@@ -19,8 +19,8 @@ const SubHeader = () => {
               Ver temario
             </button>
           </div>
-          <div className="lg:w-1/2 sm:m-4 lg:m-auto">
-            <img className="" src={imgTag}></img>
+          <div className="lg:w-1/2 sm:m-4 lg:m-0 lg:pl-8">
+            <img className="m-auto" src={imgTag}></img>
           </div>
         </div>
       </section>
