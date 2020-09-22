@@ -42,6 +42,7 @@ module.exports = {
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
+        icon: "src/images/tag.png",
       },
     },
     "gatsby-plugin-offline",
@@ -50,7 +51,7 @@ module.exports = {
       options: {
         trackingId: "UA-178522280-1",
         head: true,
-      }
-    }
+      },
+    },
   ],
 }
