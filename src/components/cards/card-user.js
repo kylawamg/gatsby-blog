@@ -9,13 +9,15 @@ const CardUser = ({ post }) => {
         src={Logo}
       ></img>
       <header className="text-center">
-        <h3 className="text-xl">Holi</h3>
+        <h3 className="text-xl text-title_purple-secondary font-primary font-bold">
+          Holi
+        </h3>
         <span className="text-text_cyan-primary text-lg font-secondary">
           @alejandro
         </span>
       </header>
 
-      <div className="text-center font-title_purple-secondary font-secondary text-xl">
+      <div className="text-left text-title_purple-secondary font-secondary text-xl">
         <p>
           Optional. Specifies the character, or the regular expression, to use
           for splitting the string.
