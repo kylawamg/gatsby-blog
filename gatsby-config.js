@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "My super blog",
-    description: "Gatsby blog with Strapi",
-    author: "Strapi team",
+    title: "devSpain",
+    description: "Programación web",
+    author: "devSpain team",
   },
   plugins: [
     "gatsby-plugin-sass",
