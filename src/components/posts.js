@@ -1,5 +1,5 @@
 import React from "react"
-import Card from "./card"
+import CardBlog from "./cards/card-blog"
 
 const Posts = ({ posts }) => {
   return (
@@ -11,13 +11,13 @@ const Posts = ({ posts }) => {
               if (i === 0) {
                 return (
                   <div key={i} className="col-span-3">
-                    <Card post={post} />
+                    <CardBlog post={post} />
                   </div>
                 )
               } else {
                 return (
-                  <div key={i} className="lg:col-span-1 col-span-3">
-                    <Card post={post} />
+                  <div key={i} className="lg:col-span-1 col-span-3 ">
+                    <CardBlog post={post} />
                   </div>
                 )
               }

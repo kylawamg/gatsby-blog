@@ -4,8 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostComponent from "../components/posts"
 import SubHeader from "../components/header/sub-header"
-
-import "../assets/scss/main.scss"
+import About from "../components/about"
 
 const IndexPage = () => (
   <Layout subheader={<SubHeader />}>
@@ -31,7 +30,12 @@ const IndexPage = () => (
           }
         }
       `}
-      render={data => <PostComponent posts={data.allStrapiPost.nodes} />}
+      render={data => (
+        <div>
+          <PostComponent posts={data.allStrapiPost.nodes} />
+          <About />
+        </div>
+      )}
     />
   </Layout>
 )

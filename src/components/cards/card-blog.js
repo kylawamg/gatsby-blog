@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../assets/images/shape.png"
+import logo from "../../assets/images/shape.png"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
-import { formatDateFromString } from "../utils/formatData"
-const Card = ({ post }) => {
+import { formatDateFromString } from "../../utils/formatData"
+const CardBlog = ({ post }) => {
   return (
     <article className="mt-10 lg:mt-4 w-full h-card rounded-lg border border-title_purple-secondary bg-background_card shadow-card">
       <header className="custom-bg h-40 rounded-t-lg p-4">
@@ -56,4 +56,4 @@ const Card = ({ post }) => {
   )
 }
 
-export default Card
+export default CardBlog

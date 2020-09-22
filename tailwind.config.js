@@ -59,13 +59,21 @@ module.exports = {
       height: {
         card: "22.1rem",
         tag: "21.25rem",
+        user_card: "16.625rem",
+        user_section: "18.6rem",
+        user_section_mobile: "56rem",
       },
       width: {
         card: "18rem",
+        user_card: "20.1rem",
         tag: "34.125rem",
       },
       boxShadow: {
         card: "8px 8px 0px rgba(55,210,210, 0.5)",
+        card_user: "8px 8px 0px (66, 49,108, 0.3)",
+      },
+      inset: {
+        user_avatar: "-2.5rem",
       },
     },
   },
