@@ -13,16 +13,25 @@ const IndexPage = () => (
       query={graphql`
         query {
           allStrapiPost {
-            edges {
-              node {
-                title
-                content
+            nodes {
+              id
+              content
+              title
+              createdAt
+              user {
+                username
+              }
+              category {
+                name
+              }
+              image {
+                absolutePath
               }
             }
           }
         }
       `}
-      render={data => <PostComponent posts={data.allStrapiPost.edges} />}
+      render={data => <PostComponent posts={data.allStrapiPost.nodes} />}
     />
   </Layout>
 )

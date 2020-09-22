@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Card = ({ post }) => {
+  debugger
   return (
     <div>
       <div className="uk-card uk-card-default">

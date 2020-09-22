@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../assets/images/shape.png"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
+import { formatDateFromString } from "../utils/formatData"
 const Card = ({ post }) => {
   return (
     <article className="mt-10 lg:mt-4 w-full h-card rounded-lg border border-title_purple-secondary bg-background_card shadow-card">
@@ -11,7 +12,7 @@ const Card = ({ post }) => {
             <img className="" src={logo}></img>
           </div>
           <h2 className="text-2xl font-primary text-title_gray-secondary font-bold">
-            Ventajas de Deno sobre Nodejs
+            {post.title}
           </h2>
         </div>
         <div className="mt-10 pl-10">
@@ -21,7 +22,7 @@ const Card = ({ post }) => {
             dateTime="2011-08-28"
             title="August 28th, 2011"
           >
-            8/28/11 -
+            {formatDateFromString(post.createdAt)} -
           </time>
           <address className="text-title_gray-secondary text-base inline font-primary">
             @
@@ -30,19 +31,14 @@ const Card = ({ post }) => {
               rel="author"
               href="/author/john-doe"
             >
-              alejandro
+              {post.user.username}
             </a>
           </address>
         </div>
       </header>
 
-      <div className="p-4 font-secondary text-title_purple-primary text-base">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard.
-        </p>
-      </div>
-      <footer className="w-full font-secondary text-title_purple-primary text-base">
+      <div className="h-48 p-4 font-secondary text-title_purple-primary text-base">
+        <p className="h-24">{post.content}</p>
         <Link
           to={`/blog`}
           href="#responsive-header"
@@ -55,7 +51,7 @@ const Card = ({ post }) => {
           ></HiOutlineArrowNarrowRight>
           <span className="font-semibold">Leer más</span>
         </Link>
-      </footer>
+      </div>
     </article>
   )
 }
