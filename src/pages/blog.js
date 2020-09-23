@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import PostComponent from "../components/posts"
 import SubHeader from "../components/header/sub-header-blog"
 
-import "../assets/scss/main.scss"
 const Blog = () => {
   const postsResponse = usePosts()
 
