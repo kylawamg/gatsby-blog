@@ -44,7 +44,7 @@ const CardBlog = ({ post }) => {
       </header>
 
       <div className="h-48 p-4 font-secondary text-title_purple-primary text-base">
-        <p className="h-24">{post.content}</p>
+        <p className="h-24">{post.excerpt}</p>
         <Link
           to={`/post/${post.strapiId}`}
           href="#responsive-header"
