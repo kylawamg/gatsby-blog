@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import PostComponent from "../components/posts"
+import PostsComponent from "../components/posts"
 import SubHeader from "../components/header/sub-header"
 import About from "../components/about"
 
@@ -14,6 +14,7 @@ const IndexPage = () => (
           allStrapiPost {
             nodes {
               id
+              strapiId
               content
               title
               createdAt
@@ -32,7 +33,7 @@ const IndexPage = () => (
       `}
       render={data => (
         <div>
-          <PostComponent posts={data.allStrapiPost.nodes} />
+          <PostsComponent posts={data.allStrapiPost.nodes} />
           <About />
         </div>
       )}

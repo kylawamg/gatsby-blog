@@ -16,6 +16,7 @@ const Blog = () => {
               nodes {
                 id
                 content
+                strapiId
                 title
                 createdAt
                 user {
