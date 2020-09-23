@@ -30,16 +30,3 @@ const Posts = ({ posts }) => {
 }
 
 export default Posts
-
-/*
-    <div>
-      <div
-        className="uk-grid uk-grid-match uk-child-width-1-3@s uk-flex-left"
-        uk-grid="true"
-      >
-        {posts.map((post, i) => {
-          return <Card post={post} key={`post${post.title}`} />
-        })}
-      </div>
-    </div>
-    */

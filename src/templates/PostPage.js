@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-
+import SubHeader from "../components/header/sub-header-post"
+import PostDetail from "../components/post-detail"
 const PostTemplate = ({ data }) => (
-  <Layout>
-    <h1>Holaaaaaaasasdasdasd</h1>
-    <h1>{data.strapiPost.title}</h1>
-    <p>{data.strapiPost.content}</p>
+  <Layout subheader={<SubHeader post={data.strapiPost} />}>
+    <PostDetail post={data.strapiPost} />
   </Layout>
 )
 
@@ -15,8 +14,19 @@ export default PostTemplate
 export const query = graphql`
   query PostTemplate($id: String) {
     strapiPost(strapiId: { eq: $id }) {
-      title
       content
+      strapiId
+      title
+      createdAt
+      user {
+        username
+      }
+      category {
+        name
+      }
+      image {
+        absolutePath
+      }
     }
   }
 `

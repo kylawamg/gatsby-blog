@@ -11,9 +11,15 @@ const CardBlog = ({ post }) => {
           <div className="pr-4 pt-1">
             <img className="" src={logo}></img>
           </div>
-          <h2 className="text-2xl font-primary text-title_gray-secondary font-bold">
-            {post.title}
-          </h2>
+          <Link
+            to={`/post/${post.strapiId}`}
+            href="#responsive-header"
+            className="p-4 hover:underline active:underline float-right "
+          >
+            <h2 className="text-2xl font-primary text-title_gray-secondary font-bold">
+              {post.title}
+            </h2>
+          </Link>
         </div>
         <div className="mt-10 pl-10">
           <time
@@ -40,7 +46,7 @@ const CardBlog = ({ post }) => {
       <div className="h-48 p-4 font-secondary text-title_purple-primary text-base">
         <p className="h-24">{post.content}</p>
         <Link
-          to={`/blog`}
+          to={`/post/${post.strapiId}`}
           href="#responsive-header"
           className="p-4 hover:underline active:underline float-right "
         >
