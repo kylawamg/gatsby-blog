@@ -12,7 +12,6 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <CookieConsent
         overlay={true}
-        debug={true}
         location="bottom"
         buttonText="Aceptar"
         declineButtonText="Decline"
