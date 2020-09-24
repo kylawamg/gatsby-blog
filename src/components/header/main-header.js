@@ -1,22 +1,12 @@
 import React, { useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import { HiMenuAlt4 } from "react-icons/hi";
+import { Link, navigate } from "gatsby";
 
 import Logo from "../logo";
-import { Link, navigate } from "gatsby";
+import { navigateWithScroll } from "../utils";
 
 const MainHeader = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-
-  const handleClick = (target, event) => {
-    event.preventDefault();
-    const anchorTarget = document.getElementById(target);
-    if (anchorTarget) {
-      anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      navigate(`/#${target}`);
-    }
-  };
 
   return (
     <div className="container mx-auto">
@@ -43,15 +33,15 @@ const MainHeader = () => {
               Blog
             </Link>
             <a href={`/#training-section`}
-              onClick={handleClick.bind(this, 'training-section')}
+              onClick={navigateWithScroll.bind(this, 'training-section')}
               className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
               ariaLabel={`Scroll to training section`}>
               {`Cursos`}
             </a>
-            <a href={`/#training-section`}
-              onClick={handleClick.bind(this, 'who-are-we-section')}
+            <a href={`/#about`}
+              onClick={navigateWithScroll.bind(this, 'about')}
               className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
-              ariaLabel={`Scroll to who are we section`}>
+              ariaLabel={`Scroll to about section`}>
               {`Quiénes somos`}
             </a>
             <a href="mailto:admin@devspain.es"
