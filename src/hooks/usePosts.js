@@ -10,6 +10,7 @@ export default function usePosts() {
           strapiId
           title
           createdAt
+          excerpt
           user {
             username
           }
