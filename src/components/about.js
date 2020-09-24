@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import CardUser from "./cards/card-user"
 const About = () => {
   return (
-    <div className="bg-background_gray">
+    <div id="who-are-we-section" className="bg-background_gray">
       <div className="relative container mx-auto">
         <section className="p-12 lg:px-32 px-6">
           <h2 className="text-mainTitle text-title_purple-primary font-bold font-primary">

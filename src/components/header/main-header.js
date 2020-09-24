@@ -1,13 +1,22 @@
-import React, { useState } from "react"
-import { AiOutlineMenu } from "react-icons/ai"
-import { HiMenuAlt4 } from "react-icons/hi"
+import React, { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { HiMenuAlt4 } from "react-icons/hi";
 
-import Logo from "../logo"
-import { Link } from "gatsby"
+import Logo from "../logo";
+import { Link, navigate } from "gatsby";
 
 const MainHeader = () => {
-  let isMobileMenuOpen = false
-  const [isExpanded, toggleExpansion] = useState(false)
+  const [isExpanded, toggleExpansion] = useState(false);
+
+  const handleClick = (target, event) => {
+    event.preventDefault();
+    const anchorTarget = document.getElementById(target);
+    if (anchorTarget) {
+      anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      navigate(`/#${target}`);
+    }
+  };
 
   return (
     <div className="container mx-auto">
@@ -22,9 +31,8 @@ const MainHeader = () => {
           ></HiMenuAlt4>
         </div>
         <div
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } w-full block flex-grow lg:flex lg:flex-row-reverse lg:items-center lg:self-end lg:w-auto`}
+          className={`${isExpanded ? `block` : `hidden`
+            } w-full block flex-grow lg:flex lg:flex-row-reverse lg:items-center lg:self-end lg:w-auto`}
         >
           <div className="text-title_gray-primary font-semibold">
             <Link
@@ -34,29 +42,27 @@ const MainHeader = () => {
             >
               Blog
             </Link>
-            <Link
-              to={`/page-2`}
-              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0  mr-4"
-            >
-              Cursos
-            </Link>
-            <Link
-              to={`/page-2`}
+            <a href={`/#training-section`}
+              onClick={handleClick.bind(this, 'training-section')}
               className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
-            >
-              Quiénes somos
-            </Link>
-            <Link
-              to={`/page-2`}
-              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0"
-            >
-              Contacto
-            </Link>
+              ariaLabel={`Scroll to training section`}>
+              {`Cursos`}
+            </a>
+            <a href={`/#training-section`}
+              onClick={handleClick.bind(this, 'who-are-we-section')}
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4"
+              ariaLabel={`Scroll to who are we section`}>
+              {`Quiénes somos`}
+            </a>
+            <a href="mailto:admin@devspain.es"
+              className="hover:underline active:underline block mt-4 lg:inline-block lg:mt-0 mr-4">
+              {`Contacto`}
+            </a>
           </div>
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default MainHeader
+export default MainHeader;
