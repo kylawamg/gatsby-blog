@@ -1,21 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./logo.css"
 
 const Logo = () => {
   return (
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
-      <Link
-        to={`/`}
-        href="#responsive-header"
-        className="text-title_gray-primary font-semibold text-xl tracking-tight self-center"
-      >
-        &lt;
-        <span className="text-text_cyan-primary font-extrabold text-2xl">
-          /
-        </span>
-        devSpain&gt;
-      </Link>
-    </div>
+    <Link to={`/`} href="#responsive-header" className="logo">
+      &lt;
+      <span className="text-text_cyan-primary">/</span>
+      devSpain&gt;
+    </Link>
   )
 }
 
