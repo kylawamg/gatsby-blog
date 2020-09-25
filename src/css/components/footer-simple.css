@@ -1,0 +1,11 @@
+.footer {
+  @apply custom-bg font-secondary;
+}
+
+/* .footer-wrapper {
+  @apply container mx-auto flex flex-col md\:flex-row w-full lg\:px-32 py-8 px-5;
+}
+
+.footer-wrapper-logo {
+  @apply mb-8 md\:mr-auto;
+} */

@@ -1,0 +1,8 @@
+/* @tailwind base;
+@tailwind components;
+
+.footer {
+  @apply static bottom-0 custom-bg h-20;
+}
+
+@tailwind utilities; */
