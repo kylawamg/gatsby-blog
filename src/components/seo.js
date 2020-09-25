@@ -16,11 +16,13 @@ function SEO({ description, lang, meta, title }) {
       link={[
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Inconsolata",
+          href:
+            "https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap",
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Montserrat",
+          href:
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap",
         },
       ]}
       script={[]}
