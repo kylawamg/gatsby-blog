@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 
 import Logo from "../logo";
 import { navigateWithScroll } from "../utils";
